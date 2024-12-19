@@ -4,12 +4,12 @@ USE knihovna;
 
 CREATE TABLE uzivatele (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    jmeno VARCHAR(100) NOT NULL,
-    prijmeni VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    surname VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    adresa VARCHAR(255) NOT NULL,
-    uzivatelske_jmeno VARCHAR(50) UNIQUE NOT NULL,
-    heslo VARCHAR(255) NOT NULL
+    address VARCHAR(255) NOT NULL,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
 );
 
 
